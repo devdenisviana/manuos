@@ -5,7 +5,7 @@
 **Documento de referência:** `docs/pre-planejamento-tcc-kernel-arm64.docx` (versão 0.1)
 **Última atualização:** 02/10/2026
 
-> **Passo atual:** T0.9 a T0.11 — Extrair os arquivos iniciais no repositório e fazer o primeiro commit
+> **Passo atual:** Bloco D — testar a placa com uma imagem pronta (T0.7 e T0.14 a T0.17)
 
 ## Legenda
 
@@ -49,11 +49,11 @@ Objetivo: deixar tudo pronto para programar (hardware testado, ambiente instalad
 
 ### Bloco C — Repositório e documentação (semana 2)
 
-- [~] **T0.9** Criar o repositório no GitHub com a estrutura de diretórios do pré-planejamento — repositório criado; estrutura no pacote inicial
-- [~] **T0.10** Adicionar README, licença e `.gitignore` — no pacote inicial
-- [~] **T0.11** Colocar em `docs/` o pré-planejamento e este cronograma — no pacote inicial
-- [ ] **T0.12** Criar os modelos de ADR (registro de decisão) e do diário de desenvolvimento
-- [ ] **T0.13** Registrar as primeiras ADRs: linguagem C, U-Boot como firmware, initrd
+- [x] **T0.9** Criar o repositório no GitHub com a estrutura de diretórios do pré-planejamento — 03/10/2026
+- [x] **T0.10** Adicionar README, licença e `.gitignore` — 03/10/2026
+- [x] **T0.11** Colocar em `docs/` o pré-planejamento e este cronograma — 03/10/2026
+- [x] **T0.12** Criar os modelos de ADR (registro de decisão) e do diário de desenvolvimento — 03/10/2026
+- [x] **T0.13** Registrar as primeiras ADRs: linguagem C, U-Boot como firmware, initrd — 03/10/2026 (também QEMU + HAL e licença MIT)
 
 ### Bloco D — Hardware (quando o adaptador chegar)
 
@@ -145,3 +145,6 @@ Objetivo: deixar tudo pronto para programar (hardware testado, ambiente instalad
 | 02/10/2026 | Decisão | Nome do sistema: **ManuOS** (homenagem a Emanuele, "Manu"; em latim, *manu* = "à mão", alusão a um kernel feito do zero). Repositório público `manuos` no GitHub; nome confirmado como disponível |
 | 03/10/2026 | T0.9 | Git configurado no Ubuntu (usuário `devdenisviana`, branch padrão `main`); GitHub CLI autenticado (HTTPS, escopos `repo` e `workflow`); repositório público `devdenisviana/manuos` criado e clonado em `~/projetos/manuos` |
 | 03/10/2026 | Decisão | Licença **MIT** (permissiva, mesma do xv6). Regras: nenhum código GPL copiado para o projeto (Linux/U-Boot apenas como referência), cabeçalho `SPDX-License-Identifier: MIT` em todo arquivo-fonte, código de terceiros registrado em `docs/terceiros.md` |
+| 03/10/2026 | T0.10–T0.11 | Primeiro commit enviado: estrutura de diretórios, README, LICENSE (MIT), `.gitignore`, pré-planejamento e cronograma em `docs/`. Adotada a convenção Conventional Commits |
+| 03/10/2026 | T0.12–T0.13 | Criados `docs/adr/` (modelo + ADRs 0001 a 0005: C, U-Boot/TF-A, QEMU + HAL, initrd, licença MIT) e `docs/diario/` (modelo + entradas de 02 e 03/10). Bloco C concluído |
+| 03/10/2026 | Processo | O cronograma do repositório é sincronizado ao final de cada bloco ou marco, com commit `docs: atualiza cronograma` |
